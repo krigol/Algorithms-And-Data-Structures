@@ -41,7 +41,7 @@ namespace PrimsMinimumSpanningTree
                                  /*D*/ { 6, 8, 0, 0, 9 },
                                  /*E*/ { 0, 5, 7, 9, 0 } };
 
-            VerticiesInGraph = graph.Length;
+            VerticiesInGraph = (int)Math.Sqrt(graph.Length);
 
             // Print the solution 
             primMST(graph);
@@ -159,6 +159,4 @@ namespace PrimsMinimumSpanningTree
         }
 
     }
-
-// This code is contributed by anuj_67. 
 }
